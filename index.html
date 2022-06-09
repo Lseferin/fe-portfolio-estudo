@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="estiloflex.css">
+        <title>Lívia Seferin</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <p>LSeferin</p>
+            </div>
+            
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/Lseferin">Github</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/lseferin/">Instagram</a>
+                </li>
+                <li>
+                    <a target="_blank" href="wa.me/51999999999">WhatsApp</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>Lívia Seferin</h1>
+                    <h5>Developer</h5>
+                </div>
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fas fa-sort-down"></i>
+                </div>
+                <div style="display: none;" id="about">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, libero dolor aliquam quasi corrupti soluta ab eos odit deserunt? Ipsa harum, assumenda. Aliquam, ipsum?</p>
+                </div>
+                <div class="form">
+                    <div>
+                        <p>Deixe seu contato!</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="Digite seu e-mail!">
+                        <button>Enviar!</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            function displayAbout() {
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

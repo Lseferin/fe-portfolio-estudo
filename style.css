@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #845805;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./pexels-photo-2387793.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 7px;
+    /* border-bottom: 2px dashed #fcfbfa9b; */
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: #d59214;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 30px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5,start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form {
+   
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.form p {
+    color: #d59214;
+}
+
+.form input {
+    
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    
+    padding: 5px 10px;
+    background: linear-gradient(to right, #9c6a0f 50%, #5d3e03 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #9c6a0f;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -4px;
+    margin-top: 15px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #5d3e03;
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}
